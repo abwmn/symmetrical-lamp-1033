@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'customers/:id', to: 'customers#show', as: 'customer'
+  post 'customers/:id/add_item', to: 'customers#add_item', as: 'add_item'
+
+  get 'items', to: 'items#index', as: 'items'
 end
