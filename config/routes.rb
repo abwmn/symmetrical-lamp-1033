@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   post 'customers/:id/add_item', to: 'customers#add_item', as: 'add_item'
 
   get 'items', to: 'items#index', as: 'items'
+
+  get 'supermarkets/:id', to: 'supermarkets#show', as: 'supermarket'
 end
